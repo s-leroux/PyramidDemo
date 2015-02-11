@@ -4,6 +4,9 @@ PyramidDemo README
 Sample demonstration web application using Pyramid 
 (http://www.pylonsproject.org/)
 
+This projet is used as support for the tutorial (in French):
+http://www.chicoree.fr/w/Premiers_pas_avec_Pyramid
+
 Getting Started
 ---------------
 
