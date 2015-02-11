@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Item View</title>
+<style>
+body {
+    background-color: #DDDDDD;
+}
+
+form.add {
+    border: solid 1px white;
+    border-radius: 8px 8px;
+    background-color: #EEEEEE;
+    padding: 2em;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 26em;
+    text-align:right;
+}
+
+label.error {
+    color: red;
+}
+
+</style>
+</head>
+<body>
+<h1>Ajout</h1>
+
+<form class='add' method='POST' action='${url}'>
+<ul><li tal:repeat="message messages" tal:content="message"/></ul>
+<label class='${ean13_error}'>EAN13:</label>
+<input type='text' name='ean13' value='${ean13}'> <br/>
+<label class='${description_error}'>Description:</label>
+<input type='text' name='description' value='${description}'> <br/>
+<input type='submit' value='envoyer' name='form.submitted'>
+</form>
+
+<p><a href='view'>Retourner à la liste</a></p>
+</body>
+</html>

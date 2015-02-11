@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Item View</title>
+<style>
+body {
+    background-color: #DDDDDD;
+}
+
+table {
+    border: solid 1px black;
+    background-color: #EEEEEE;
+}
+
+td { padding: 0.5em; }
+
+</style>
+</head>
+<body>
+<h1>Visualisation</h1>
+
+<table>
+<tr tal:repeat="item items">
+    <td tal:content="item.ean13"/>
+    <td tal:content="item.user"/>
+    <td tal:content="item.description"/>
+</tr>
+</table>
+
+<p><a href='add'>Ajouter une entrée</a></p>
+</body>
+</html>
