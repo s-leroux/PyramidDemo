@@ -13,5 +13,7 @@ Getting Started
 
 - $VENV/bin/initialize_PyramidDemo_db development.ini
 
+- mysql -u root -p -h <db-host> < pyramiddemo/script/initializedb.sql
+
 - $VENV/bin/pserve development.ini
 

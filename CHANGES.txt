@@ -1,3 +1,9 @@
+0.0.1
+-----
+
+-  Add the initializedb.sql SQL script to create the required DB
+   and populate non-ORM managed tables
+
 0.0
 ---
 
